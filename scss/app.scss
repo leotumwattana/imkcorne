@@ -70,6 +70,10 @@ p {
 hr.footer {
   margin-top: 6em;
   margin-bottom: 2em;
+
+  @include breakpoint(small) {
+    margin-top: 2em;
+  }
 }
 
 footer {
@@ -78,16 +82,32 @@ footer {
 }
 
 .margin-top {
-  margin-top: 1em;
+  @include breakpoint(large) {
+    margin-top: 1em;
+  }
+  @include breakpoint(small) {
+    margin-top: 1.2em;
+  }
 }
 
 .margin-bottom {
-  margin-bottom: 3em;
+  @include breakpoint(large) {
+    margin-bottom: 2em;
+  }
+  @include breakpoint(small) {
+    margin-top: 0em;
+  }
 }
 
 .margin-large {
-  margin-top: 6em;
-  margin-bottom: 6em;
+  @include breakpoint(medium) {
+    margin-top: 6em;
+    margin-bottom: 6em;
+  }
+  @include breakpoint(small) {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
 }
 
 .color-chip {
@@ -111,7 +131,68 @@ footer {
 }
 
 h3 {
+  font-weight: 300;
+  font-size: 1.4em;
   margin-bottom: 0.5em;
+}
+
+.imkxcorne {
+  width: 368px;
+  height: 65px;
+}
+
+.imkcorne {
+  @include breakpoint(medium) {
+    width: 277px;
+    height: 54px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  @include breakpoint(small) {
+    margin-top: -1.5em;
+    margin-bottom: -2em;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.imkulio {
+  @include breakpoint(medium) {
+    width: 176px;
+    height: 62px;
+    margin-top: -2em;
+    margin-bottom: 4em;
+  }
+
+  @include breakpoint(small) {
+    width: 100px;
+    height: 100px;
+    margin-top: -8em;
+    margin-bottom: 0em;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.copyright {
+  @include breakpoint(medium) {
+    text-align: left;
+  }
+  @include breakpoint(small) {
+    text-align: center;
+  }
+}
+
+.social {
+  @include breakpoint(medium) {
+    text-align: right;
+    margin-top: 0;
+  }
+  @include breakpoint(small) {
+    text-align: center;
+    margin-top: 1em;
+  }
 }
 
 .color-well {
