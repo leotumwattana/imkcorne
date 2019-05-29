@@ -148,6 +148,20 @@ h3 {
   margin-bottom: 0.8em;
 }
 
+h4 {
+  font-weight: 400;
+  color: #666;
+  margin-top: 1.3em;
+}
+
+h5 {
+  font-weight: 600;
+}
+
+.highlight {
+  background-color: #8AD5FE;
+}
+
 .imkxcorne {
   @include breakpoint(medium) {
     width: 368px;
