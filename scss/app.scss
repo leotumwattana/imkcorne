@@ -74,6 +74,11 @@ a {
   font-weight: 600;
 }
 
+a.btn {
+  text-decoration: none;
+  color: #111;
+}
+
 hr.footer {
   margin-top: 6em;
   margin-bottom: 2em;
@@ -298,5 +303,15 @@ h5 {
   p {
     line-height: 1.6;
     margin-bottom: 0.9em;
+  }
+}
+
+.build-guide {
+  h3 {
+    margin-top: 2em;
+  }
+  p {
+    margin-top: 1em;
+    margin-bottom: 2.6em;
   }
 }
